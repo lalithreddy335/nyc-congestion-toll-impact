@@ -1,0 +1,4 @@
+,coef,se,p_value,effect_pct,ci_low_pct,ci_high_pct
+inside_post,-0.119,0.027,0.0,-11.257,-15.805,-6.463
+entering_post,-0.108,0.02,0.0,-10.2,-13.622,-6.642
+exiting_post,-0.06,0.022,0.007,-5.837,-9.836,-1.66
