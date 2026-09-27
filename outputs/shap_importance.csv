@@ -1,0 +1,11 @@
+,0
+hour_of_day,0.444
+weekday,0.097
+avg_trip_miles,0.058
+borough,0.039
+month,0.037
+cluster,0.025
+is_weekend,0.02
+toll_zone,0.019
+is_holiday,0.008
+airport,0.003
