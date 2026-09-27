@@ -1,0 +1,7 @@
+year,grp,actual_M,no_toll_M,effect_pct,trips_lost_K_per_month
+2025,entering,10.7,11.5,-7.2,68.9
+2025,exiting,13.9,14.3,-3.2,38.3
+2025,inside,24.6,25.2,-2.7,56.8
+2026,entering,6.3,7.0,-10.5,105.3
+2026,exiting,8.1,8.7,-6.2,77.0
+2026,inside,14.5,15.5,-6.2,136.2

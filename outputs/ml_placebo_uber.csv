@@ -1,0 +1,4 @@
+grp,actual,predicted,placebo_effect_pct,MAPE_daily_pct
+entering,5914475.0,6083109.0,-2.8,5.3
+exiting,7396586.0,7566217.5,-2.2,6.4
+inside,13322885.0,13983319.0,-4.7,8.9
