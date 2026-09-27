@@ -1,0 +1,97 @@
+hour,area,day_type,trips,share_of_day_pct
+0,Rest of city,Weekday,2044554.0,2.553
+1,Rest of city,Weekday,1209946.0,1.511
+2,Rest of city,Weekday,819794.0,1.024
+3,Rest of city,Weekday,742660.0,0.927
+4,Rest of city,Weekday,1023420.0,1.278
+5,Rest of city,Weekday,1590767.0,1.986
+6,Rest of city,Weekday,2744390.0,3.427
+7,Rest of city,Weekday,4353755.0,5.436
+8,Rest of city,Weekday,5263093.0,6.571
+9,Rest of city,Weekday,4487716.0,5.603
+10,Rest of city,Weekday,3729498.0,4.656
+11,Rest of city,Weekday,3451953.0,4.31
+12,Rest of city,Weekday,3505693.0,4.377
+13,Rest of city,Weekday,3676410.0,4.59
+14,Rest of city,Weekday,4104763.0,5.125
+15,Rest of city,Weekday,4221603.0,5.271
+16,Rest of city,Weekday,4391132.0,5.483
+17,Rest of city,Weekday,4765775.0,5.95
+18,Rest of city,Weekday,4774696.0,5.961
+19,Rest of city,Weekday,4433042.0,5.535
+20,Rest of city,Weekday,3975012.0,4.963
+21,Rest of city,Weekday,3747377.0,4.679
+22,Rest of city,Weekday,3723563.0,4.649
+23,Rest of city,Weekday,3312353.0,4.136
+0,Rest of city,Weekend,1740615.0,4.903
+1,Rest of city,Weekend,1315096.0,3.704
+2,Rest of city,Weekend,964138.0,2.716
+3,Rest of city,Weekend,776049.0,2.186
+4,Rest of city,Weekend,688877.0,1.94
+5,Rest of city,Weekend,623036.0,1.755
+6,Rest of city,Weekend,772772.0,2.177
+7,Rest of city,Weekend,958430.0,2.7
+8,Rest of city,Weekend,1144684.0,3.224
+9,Rest of city,Weekend,1389323.0,3.913
+10,Rest of city,Weekend,1562574.0,4.401
+11,Rest of city,Weekend,1614807.0,4.548
+12,Rest of city,Weekend,1658896.0,4.672
+13,Rest of city,Weekend,1720376.0,4.846
+14,Rest of city,Weekend,1807647.0,5.091
+15,Rest of city,Weekend,1864120.0,5.25
+16,Rest of city,Weekend,1866864.0,5.258
+17,Rest of city,Weekend,1905311.0,5.366
+18,Rest of city,Weekend,1969256.0,5.547
+19,Rest of city,Weekend,1954878.0,5.506
+20,Rest of city,Weekend,1877915.0,5.289
+21,Rest of city,Weekend,1805104.0,5.084
+22,Rest of city,Weekend,1810632.0,5.1
+23,Rest of city,Weekend,1712402.0,4.823
+0,Toll zone,Weekday,805580.0,3.077
+1,Toll zone,Weekday,520006.0,1.986
+2,Toll zone,Weekday,337507.0,1.289
+3,Toll zone,Weekday,250927.0,0.958
+4,Toll zone,Weekday,282969.0,1.081
+5,Toll zone,Weekday,364700.0,1.393
+6,Toll zone,Weekday,583192.0,2.227
+7,Toll zone,Weekday,889301.0,3.397
+8,Toll zone,Weekday,1244592.0,4.754
+9,Toll zone,Weekday,1208732.0,4.617
+10,Toll zone,Weekday,1050457.0,4.012
+11,Toll zone,Weekday,1088506.0,4.158
+12,Toll zone,Weekday,1116181.0,4.263
+13,Toll zone,Weekday,1161570.0,4.437
+14,Toll zone,Weekday,1181547.0,4.513
+15,Toll zone,Weekday,1230518.0,4.7
+16,Toll zone,Weekday,1343179.0,5.13
+17,Toll zone,Weekday,1585438.0,6.056
+18,Toll zone,Weekday,1758021.0,6.715
+19,Toll zone,Weekday,1729260.0,6.605
+20,Toll zone,Weekday,1757667.0,6.713
+21,Toll zone,Weekday,1733693.0,6.622
+22,Toll zone,Weekday,1612894.0,6.16
+23,Toll zone,Weekday,1345141.0,5.138
+0,Toll zone,Weekend,673956.0,5.985
+1,Toll zone,Weekend,588830.0,5.229
+2,Toll zone,Weekend,455383.0,4.044
+3,Toll zone,Weekend,329411.0,2.925
+4,Toll zone,Weekend,210659.0,1.871
+5,Toll zone,Weekend,144211.0,1.281
+6,Toll zone,Weekend,150349.0,1.335
+7,Toll zone,Weekend,181959.0,1.616
+8,Toll zone,Weekend,246324.0,2.187
+9,Toll zone,Weekend,336017.0,2.984
+10,Toll zone,Weekend,433304.0,3.848
+11,Toll zone,Weekend,497413.0,4.417
+12,Toll zone,Weekend,524460.0,4.657
+13,Toll zone,Weekend,533086.0,4.734
+14,Toll zone,Weekend,522404.0,4.639
+15,Toll zone,Weekend,529479.0,4.702
+16,Toll zone,Weekend,566712.0,5.032
+17,Toll zone,Weekend,613369.0,5.447
+18,Toll zone,Weekend,647307.0,5.748
+19,Toll zone,Weekend,659149.0,5.853
+20,Toll zone,Weekend,627257.0,5.57
+21,Toll zone,Weekend,620621.0,5.511
+22,Toll zone,Weekend,616681.0,5.476
+23,Toll zone,Weekend,553065.0,4.911

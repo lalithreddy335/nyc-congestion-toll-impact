@@ -1,0 +1,6 @@
+order,kpi,value,format,note
+1,Toll paid on rides,221627633.25,usd,"Uber, Lyft & yellow taxis, Jan 2025 onward"
+2,Faster traffic,3.68,pct,Uber trips entering the zone vs uptown Manhattan
+3,Driver pay per hour,4.14,pct,Uber trips entering the zone
+4,Trips into the zone,-4.4,pct,Range across 3 methods: about -3% to -7%
+5,Driver repositioning upside,8060362.0,usd,Annual platform margin (range: low to high assumption)
