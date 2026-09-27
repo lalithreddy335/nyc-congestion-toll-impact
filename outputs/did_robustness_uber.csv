@@ -1,0 +1,7 @@
+,,effect_pct,ci_low,ci_high,p_value
+plain DiD,inside,-11.26,-15.8,-6.46,0.0
+plain DiD,entering,-10.2,-13.62,-6.64,0.0
+plain DiD,exiting,-5.84,-9.84,-1.66,0.01
+with group trends,inside,4.31,-6.73,16.66,0.46
+with group trends,entering,-3.23,-10.98,5.19,0.44
+with group trends,exiting,-5.89,-15.24,4.49,0.26

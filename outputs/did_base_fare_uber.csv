@@ -1,0 +1,7 @@
+spec,group,effect_pct,ci_low,ci_high,p_value
+plain,inside,9.34,6.15,12.62,0.0
+plain,entering,6.66,4.8,8.55,0.0
+plain,exiting,5.46,3.78,7.17,0.0
+with trends,inside,-6.11,-10.82,-1.15,0.02
+with trends,entering,1.43,-2.42,5.42,0.47
+with trends,exiting,-1.23,-4.48,2.13,0.47
