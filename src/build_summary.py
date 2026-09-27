@@ -1,13 +1,30 @@
 import duckdb, os, sys, time
+import requests
 from datetime import date
 from zones import CBD_ZONES, BOUNDARY_ZONES
 
 BASE = "https://d37ci6vzurychx.cloudfront.net/trip-data"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "summary")
+RAW = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "raw")
 os.makedirs(OUT, exist_ok=True)
+os.makedirs(RAW, exist_ok=True)
 
 con = duckdb.connect()
-con.sql("INSTALL httpfs; LOAD httpfs;")
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+
+
+def download(url, path):
+    """Stream a file to disk. Returns False if it doesn't exist (403/404)."""
+    with requests.get(url, headers=HEADERS, stream=True, timeout=60) as r:
+        if r.status_code in (403, 404):
+            return False
+        r.raise_for_status()
+        tmp = path + ".part"
+        with open(tmp, "wb") as f:
+            for chunk in r.iter_content(chunk_size=8 * 1024 * 1024):
+                f.write(chunk)
+    os.replace(tmp, path)
+    return True
 
 cbd = ",".join(map(str, CBD_ZONES))
 bnd = ",".join(map(str, BOUNDARY_ZONES))
@@ -120,9 +137,22 @@ for y, m in month_list():
             print(f"{name} {ym}: already done, skipping")
             continue
         url = f"{BASE}/{name}_tripdata_{ym}.parquet"
-        t = time.time()
-        try:
-            con.sql(build(url, start, end, out))
-            print(f"{name} {ym}: done in {time.time() - t:.0f}s")
-        except Exception as e:
-            print(f"{name} {ym}: not available ({type(e).__name__})")
+        raw = os.path.join(RAW, f"{name}_{ym}.parquet").replace("\\", "/")
+        for attempt in range(1, 4):            # up to 3 tries
+            t = time.time()
+            try:
+                if not os.path.exists(raw):
+                    if not download(url, raw):
+                        print(f"{name} {ym}: not published yet, skipping")
+                        break
+                con.sql(build(raw, start, end, out))
+                os.remove(raw)                 # delete the big raw file, keep the summary
+                print(f"{name} {ym}: done in {time.time() - t:.0f}s")
+                break
+            except Exception as e:
+                msg = str(e).splitlines()[0][:200]
+                print(f"{name} {ym}: FAILED (try {attempt}) -> {msg}")
+                for p in (raw, raw + ".part"):
+                    if os.path.exists(p):
+                        os.remove(p)
+                time.sleep(15 * attempt)       # wait longer each retry
